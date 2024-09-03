@@ -1,3 +1,38 @@
+// import axios from 'axios';
+// import { initializeApp } from 'firebase/app';
+// import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
+
+// const API_URL = 'http://localhost:5000/api';
+
+// export const api = axios.create({
+//   baseURL: API_URL,
+// });
+
+// const firebaseConfig = {
+//   // Your Firebase configuration object
+// };
+
+// const firebaseApp = initializeApp(firebaseConfig);
+// const auth = getAuth(firebaseApp);
+
+// export const login = async (email: string, password: string) => {
+//   const userCredential = await signInWithEmailAndPassword(auth, email, password);
+//   const token = await userCredential.user.getIdToken();
+//   return { data: { token } };
+// };
+
+// export const signup = async (email: string, password: string) => {
+//   const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+//   await sendEmailVerification(userCredential.user);
+//   const token = await userCredential.user.getIdToken();
+//   return { data: { token } };
+// };
+
+// // Function to set the token in the API instance
+// export const setAuthToken = (token: string) => {
+//   api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+// };
+
 import axios from 'axios';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';

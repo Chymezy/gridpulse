@@ -9,3 +9,5 @@ import { Firestore } from 'firebase/firestore';
 export type { FirebaseApp, Auth, Firestore };
 
 // Remove all Firebase initialization code
+
+// export {}
