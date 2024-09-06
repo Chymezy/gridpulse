@@ -49,7 +49,8 @@ function Login({ onLoginSuccess }: LoginProps) {
       onLoginSuccess();
       navigate('/dashboard');
     } catch (err: any) {
-      setError(err.message || 'Invalid email or password');
+      // setError(err.message || 'Invalid email or password');
+      setError('Invalid email or password');
       console.error(err);
     }
   };
